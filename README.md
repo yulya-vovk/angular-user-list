@@ -1,59 +1,54 @@
-# UserListApp
+# Angular — Список пользователей с поиском и фильтрацией
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.1.4.
+Этот проект — моё тестовое задание, демонстрирующее навыки работы с **Angular**, **TypeScript**, **формами**, **фильтрацией**, **поиском** и **unit-тестами**.
 
-## Development server
+  Используемые технологии:
+- **Angular 17+** (standalone-компоненты)
+- **TypeScript** — типизация
+- **Angular CLI** — сборка и управление проектом
+- **FormsModule** — работа с формами и `ngModel`
+- **NgFor, NgIf** — структурные директивы
+- **Unit-тесты (Jest / Karma)** — проверка логики компонента
 
-To start a local development server, run:
+  Проект представляет собой **список пользователей** с возможностью:
+- Поиска по имени
+- Фильтрации: все / активные / неактивные
+- Просмотра email при клике на пользователя
+- Минимальной, но чистой стилизацией
 
+---
+
+## 🚀 Запуск проекта
+
+### 1. Установи зависимости
+```bash
+npm install
+```
+
+## Запусти локальный dev-сервер:
 ```bash
 ng serve
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+Сервер запустится на http://localhost:4200
 
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
+## Запуск Unitов-тесты (Karma / Jest)
 ```bash
 ng test
 ```
 
-## Running end-to-end tests
+Откроется браузер и запустит все тесты.
 
-For end-to-end (e2e) testing, run:
+## Просмотр покрытия кода (code coverage)
+```bash
+ng test --no-watch --code-coverage
+```
 
+Отчет будет доступен в папке coverage/ (открой coverage/lcov-report/index.html в браузере)
+
+## Запуск end-to-end tests (Cypress)
 ```bash
 ng e2e
 ```
 
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
 
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
